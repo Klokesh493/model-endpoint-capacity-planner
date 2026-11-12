@@ -22,6 +22,10 @@ python3 -m unittest discover . -v
 
 Run `make verify` with Make and Python 3 installed. The target runs the documented sample through the project CLI. It also runs the existing Python unit tests.
 
+## Business problem
+
+Serving teams need to translate forecast requests into replica counts while reserving headroom for demand variation.
+
 ## Project walkthrough
 
 ```mermaid

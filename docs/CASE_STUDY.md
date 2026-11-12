@@ -2,7 +2,7 @@
 
 ## Business problem
 
-Estimates replicas needed for model serving from QPS, latency budget, and per-replica throughput.
+Serving teams need to translate forecast requests into replica counts while reserving headroom for demand variation.
 
 ## Reproduce the workflow
 
