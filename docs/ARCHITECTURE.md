@@ -4,11 +4,11 @@ Estimates replicas needed for model serving from QPS, latency budget, and per-re
 
 ```mermaid
 flowchart LR
-    N0["sample_capacity.csv"]
-    N1["capacity_planner.py"]
-    N2["replicas needed"]
-    N3["Result for operator review"]
-    N0 --> N1 --> N2 --> N3
+    A["Target QPS, replica throughput, and headroom"]
+    B["Scale target by headroom"]
+    C["Divide by replica throughput and round up"]
+    D["Recommended replica count with minimum of one"]
+    A --> B --> C --> D
 ```
 
 ## Operational boundaries

@@ -24,4 +24,13 @@ Run `make verify` with Make and Python 3 installed. The target runs the document
 
 ## Project walkthrough
 
+```mermaid
+flowchart LR
+    A["Target QPS, replica throughput, and headroom"]
+    B["Scale target by headroom"]
+    C["Divide by replica throughput and round up"]
+    D["Recommended replica count with minimum of one"]
+    A --> B --> C --> D
+```
+
 [Architecture and data flow](docs/ARCHITECTURE.md) · [Business problem, demo, and verification](docs/CASE_STUDY.md)
